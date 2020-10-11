@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    enfield-jekyll-theme (1.0.1)
+    enfield-jekyll-theme (1.1.1)
       bundler (~> 2.1)
-      jekyll (~> 4.0)
+      jekyll (~> 4.1)
       jekyll-analytics (~> 0.1)
       jekyll-feed (~> 0.13)
       jekyll-gist (~> 1.5)

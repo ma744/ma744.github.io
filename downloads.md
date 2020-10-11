@@ -8,9 +8,9 @@ title: Downloads
 
 ## Enfield Jekyll Theme
 
-Download it [directly](https://github.com/ma744/Enfield/archive/master.zip)
+Download it [directly](https://github.com/ma744/enfield-jekyll-theme/archive/master.zip)
 
-or have a look at the [source code](https://github.com/ma744/Enfield).
+or have a look at the [source code](https://github.com/ma744/enfield-jekyll-theme).
 
 * * *
 
