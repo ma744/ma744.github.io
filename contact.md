@@ -1,9 +1,7 @@
 ---
 layout: page
-title: Contact
+title: Kontakt
 ---
-
-## Kontakt ##
 
 
 <p class="lead">E-Mail: <span class="bot">ed[tod]ztra-lecram [ta] liame</span></p>
