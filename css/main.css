@@ -276,6 +276,10 @@ footer .list-inline {
   margin: 0;
   padding: 0;
 }
+
+footer .fa-github, footer .fa-envelope, footer .fa-rss {
+  color: #101010;
+}
 footer .copyright {
   font-family: monospace;
   text-align: center;
@@ -787,3 +791,12 @@ pre {
   transform: translate(1vw, 1vh)
 }
 
+/* EXTRA */
+
+/* A little protection against spam */
+/* Write email adress in reversed order and in a <span class="bot"> tag. */
+.bot {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}

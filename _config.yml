@@ -26,7 +26,6 @@ navbar-links:
   Downloads: downloads
   Home: "https://marcel-artz.de"
 
-# TODO: List of links in the footer
 footer-links:
   Datenschutz: privacy
   Impressum: impress
@@ -47,19 +46,19 @@ sass:
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 # I used material design with #ffc400 as primary color (https://material.io/design/color/the-color-system.html#tools-for-picking-colors)
-navbar-col: "#0A0A0A"
-navbar-text-col: "#FFC400"
-navbar-children-col: "#121212"
+navbar-col: "#0A0A0A" # black
+navbar-text-col: "#FFC400" # dark yellow
+navbar-children-col: "#121212" # dark grey
 
-page-col: "#0A0A0A"
-body-text-col: "#616161"
+page-col: "#0A0A0A" # black
+body-text-col: "#616161"  # light grey
 
-link-col: "#3cff00"
-hover-col: "#3cff00"
+link-col: "#ffb500" # not so dark yellow
+hover-col: "#ffb500" # not so dark yellow
 
-footer-col: "#0A0A0A"
-footer-text-col: "#FFC400"
-footer-link-col: "#FFC400"
+footer-col: "#0A0A0A" # black
+footer-text-col: "#FFC400" # dark yellow
+footer-link-col: "#ffb500" # not so dark yellow
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
