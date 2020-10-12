@@ -278,7 +278,7 @@ footer .list-inline {
 }
 
 footer .fa-github, footer .fa-envelope, footer .fa-rss {
-  color: #101010;
+  color: #101010 !important;
 }
 footer .copyright {
   font-family: monospace;
