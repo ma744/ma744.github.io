@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jekyll unter Linux installieren und konfigurieren
+title: Jekyll unter Ubuntu Linux installieren und konfigurieren
 subtitle: Installation mit Bundler
 tags: [jekyll, bundler, git, ruby, linux]
 ---
@@ -16,28 +16,35 @@ tags: [jekyll, bundler, git, ruby, linux]
 6. [Weiterführende Konfigurationen für das Jekyll-Projekt](#weiterführende-konfigurationen-für-das-jekyll-projekt)
 7. [Quellen und weiterführende Links](#quellen-und-weiterführende-links)
 
+
 ## Meine Intention für diese Anleitung ##
 
 - eine möglichst knappe Anleitung zu erstellen, welche die komplette Installation und mein verwendetes Setup dokumentiert 
 - eine Anleitung zu erstellen, die Bundler korrekt verwendet
 - eine Anleitung zu erstellen, die einige weiterführende Fragen aufgreift und im tl;dr-Stil beantwortet, sofern sie dadurch die [offizielle Jekyll-Dokumentation](https://jekyllrb.com/docs/) aus meiner Sicht sinnvoll ergänzt
 
+
+<br/>
+
 ## Installation
 
 *Weiter unten befindet sich eine [tl;dr-Version](##tl;dr-Version).*
 
+<br/>
 ### Repositories updaten (hier mit apt gezeigt)
 
 ```shell
 sudo apt-get update
 sudo apt-get upgrade -y
 ```
+<br/>
 
 ### Ruby installieren (hier mit apt gezeigt)
 
 ```shell
 sudo apt-get install -y ruby-full 
 ```
+<br/>
 
 ### Bundler und Jekyll installieren 
 
@@ -53,6 +60,7 @@ echo 'PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"' >> ~/.zshrc
 
 *Bundler sollte ohne `root`-Rechte installiert und ausgeführt werden.*
 
+<br/>
 ## Ein neues Projekt erstellen
 
 ### Bundler initialisieren
@@ -69,8 +77,7 @@ bundle init
 
 ---
 
-
-
+<br/>
 ### Bundler konfigurieren
 
 Dieser Schritt dient dazu projektbezogene Abhängigkeiten ohne Tools wie [Docker](https://www.docker.com/)  vom Rest des Systems zu isolieren und auf einfache Weise die Kontrolle über bestimmte Versionen von anderweitig verwendeten Gems zu behalten (mehr siehe [unten](###Weitere Dependencies zum Projekt hinzufügen###)).
@@ -79,11 +86,15 @@ Dieser Schritt dient dazu projektbezogene Abhängigkeiten ohne Tools wie [Docker
 bundle config set path 'vendor/bundle'
 ```
 
+<br/>
+
 ### Jekyll via Bundler zum Projekt hinzufügen
 
 ```shell
 bundle add jekyll
 ```
+
+<br/>
 
 ### Die Verzeichnisstruktur für das Jekyllprojekt erzeugen
 
@@ -95,6 +106,8 @@ bundle install	# installs missing gems
 `--force` wird benötigt, da der Ordner nicht leer ist
 
 `--skip-bundle .` wird benötigt, um `bundle install` seperat auszuführen (andernfalls könnte es zu Problemen mit Jekyll und dem bereits existierendem Gemfile geben.)
+
+<br/>
 
 ### Die Seite für die lokale Entwicklung zum Laufen bringen  ### 
 
@@ -109,6 +122,8 @@ Die Seite ist nun unter http://127.0.0.1:4000 zu finden.
 
 ***
 
+<br/>
+
 ## Ein Version-Control-System (hier [Git](https://git-scm.com/)) hinzufügen ##
 
 ### Git installieren ###
@@ -117,11 +132,15 @@ Die Seite ist nun unter http://127.0.0.1:4000 zu finden.
 sudo apt-get install git
 ```
 
+<br/>
+
 ### Git initialisieren ###
 
 ```shell
 git init
 ```
+
+<br/>
 
 ### .gitignore hinzufügen ###
 
@@ -138,6 +157,8 @@ _site/
 vendor/" > .gitignore
 ```
 
+<br/>
+
 ### Initialen Commit durchführen ###
 
 ```shell
@@ -148,6 +169,8 @@ git tag -a v0.1 -m "Initial build"
 
 
 ***
+
+<br/>
 
 ## tl;dr-Version ##
 
@@ -170,6 +193,8 @@ bundle exec jekyll serve
 
 ***
 
+<br/>
+
 ## Weiterführende Konfigurationen für das Jekyll-Projekt 
 
 ### Aufteilung in Git-Branches  ###
@@ -178,7 +203,7 @@ bundle exec jekyll serve
 
 Aufteilung in 
 
-- master: Für User-Seiten
+- master: Für User-Seiten oder
 - gh-pages: Für Projektseiten (Von [GitHub empfohlen](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site))
 - testing: Für das Entwickeln und Testen neuer Funktionen
 - stable: Die fertige Seite aber ohne Posts, Blogbeiträge etc.
@@ -189,9 +214,13 @@ git checkout -b stable
 git checkout -b testing
 ```
 
+<br/>
+
 ### Standart-Theme ändern ###
 
 Im Gemfile einfach die Zeile `gem “minima”, “~> [version]” auskommentieren und ersetzen. Minima ist das Default-Theme für Jekyll.	
+
+<br/>
 
 ### Weitere Dependencies zum Projekt hinzufügen ###
 
@@ -207,9 +236,13 @@ weitere Plugins installieren.
 
 > Falls die Frage aufkommen sollte: [Gemfile vs Gemspec](https://medium.com/@divya.n/gemfile-vs-gemspec-ee72512da246)
 
+<br/>
+
 ### Die Jekyll-Configs anpassen ###
 
 Die Konfiguration kann in der _config.yml-Datei angepasst werden. Eine [komplette Referenz zur _config.yml](https://jekyllrb.com/docs/configuration/options/) und die [Default-Config](https://jekyllrb.com/docs/configuration/default/), sowie [weitere Konfigurationsmöglichkeiten](https://jekyllrb.com/docs/configuration/) sind in den Jekyll-Docs zu finden.
+
+<br/>
 
 ### Die Verzeichnisstruktur erweitern ###
 
@@ -218,6 +251,8 @@ Siehe [hier](https://jekyllrb.com/docs/structure/) für eine offizelle Referenz.
 
 
 ***
+
+<br/>
 
 ## Quellen und weiterführende Links ##
 
