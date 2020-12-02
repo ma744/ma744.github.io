@@ -21,12 +21,13 @@ Gem::Specification.new do |spec|
 
   # Other plugins by Jekyll
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
-  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6"
   spec.add_runtime_dependency "jekyll-mentions", "~> 1.6"
   spec.add_runtime_dependency "jekyll-gist", "~> 1.5"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.13"
   spec.add_runtime_dependency "jekyll-redirect-from", "~> 0.16"
+  # jekyll-sitemap should be last item of plugin list : https://github.com/jekyll/jekyll-sitemap
+  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
 
   # Third party plugins
   spec.add_runtime_dependency "jekyll-analytics", "~> 0.1"

@@ -1,4 +1,3 @@
 User-agent: *
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: https://marcel-artz/sitemap.xml
 Allow: *
-Disallow: /data/
