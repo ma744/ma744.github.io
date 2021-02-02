@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "enfield-jekyll-theme"
+  spec.name          = "enfield-jekyll-theme-website"
   spec.version       = "1.1.2"
   spec.authors       = ["Marcel Artz"]
   spec.email         = ["email@marcel-artz.de"]
 
-  spec.summary       = %q{Dark Blogging Theme for Jekyll}
-  spec.description   = %q{Enfield is a dark blogging theme that I created for my personal website. It is made with simplicity, readability and extensibility in mind.}
-  spec.homepage      = "https://github.com/ma744/Enfield-Jekyll-Theme"
-  spec.license       = "MIT"
+  spec.summary       = {Website von Marcel Artz}
+  spec.description   = {Dokumentationen über meine Projekte aus dem Bereich der IT und IT-Sicherheit.}
+  spec.homepage      = "https://github.com/ma744/ma744.github.io"
+  spec.license       = "Exclusive Copyright"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
