@@ -1,11 +1,11 @@
 PATH
   remote: .
   specs:
-    enfield-jekyll-theme (1.1.2)
+    enfield-jekyll-theme-website (1.1.2)
       bundler (~> 2.1)
       jekyll (~> 4.1)
       jekyll-analytics (~> 0.1)
-      jekyll-feed (~> 0.13)
+      jekyll-feed (~> 0.15)
       jekyll-gist (~> 1.5)
       jekyll-mentions (~> 1.6)
       jekyll-paginate (~> 1.1)
@@ -122,7 +122,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  enfield-jekyll-theme!
+  enfield-jekyll-theme-website!
   jekyll (~> 4.1)
 
 BUNDLED WITH

@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Marcel Artz"]
   spec.email         = ["email@marcel-artz.de"]
 
-  spec.summary       = {Website von Marcel Artz}
-  spec.description   = {Dokumentationen über meine Projekte aus dem Bereich der IT und IT-Sicherheit.}
+  spec.summary       = "Website von Marcel Artz"
+  spec.description   = "Dokumentationen über meine Projekte aus dem Bereich der IT und IT-Sicherheit."
   spec.homepage      = "https://github.com/ma744/ma744.github.io"
   spec.license       = "Exclusive Copyright"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
