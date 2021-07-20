@@ -9,3 +9,5 @@ Minor changes will not be listed here.
 **2020-10-10** Website is updated and includes now the enfield-jekyll-theme version 1.1.1
 
 **2021-02-02** Plugin updates.
+
+**2021-07-20** Plugin updates.

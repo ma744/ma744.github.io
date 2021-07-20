@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "enfield-jekyll-theme-website"
-  spec.version       = "1.1.3"
+  spec.version       = "1.1.4"
   spec.authors       = ["Marcel Artz"]
   spec.email         = ["email@marcel-artz.de"]
 
@@ -16,8 +16,8 @@ Gem::Specification.new do |spec|
 
 
   # Core dependencies
-  spec.add_runtime_dependency "bundler", "~> 2.1"
-  spec.add_runtime_dependency "jekyll", "~> 4.1"
+  spec.add_runtime_dependency "bundler", "~> 2.2"
+  spec.add_runtime_dependency "jekyll", "~> 4.2"
 
   # Other plugins by Jekyll
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
@@ -31,6 +31,9 @@ Gem::Specification.new do |spec|
 
   # Third party plugins
   spec.add_runtime_dependency "jekyll-analytics", "~> 0.1"
+
+  # Needed for Ruby v3
+  spec.add_runtime_dependency "webrick", "~> 1.7"
 
 end
 
