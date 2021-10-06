@@ -11,3 +11,5 @@ Minor changes will not be listed here.
 **2021-02-02** Plugin updates.
 
 **2021-07-20** Plugin updates.
+
+**2021-10-06** Plugin updates.
