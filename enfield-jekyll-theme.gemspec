@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "enfield-jekyll-theme-website"
-  spec.version       = "1.1.5"
+  spec.version       = "1.1.6"
   spec.authors       = ["Marcel Artz"]
   spec.email         = ["email@marcel-artz.de"]
 
@@ -16,15 +16,15 @@ Gem::Specification.new do |spec|
 
 
   # Core dependencies
-  spec.add_runtime_dependency "bundler", "~> 2.2"
+  spec.add_runtime_dependency "bundler", "~> 2"
   spec.add_runtime_dependency "jekyll", "~> 4.2"
 
   # Other plugins by Jekyll
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.7"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2"
   spec.add_runtime_dependency "jekyll-mentions", "~> 1.6"
   spec.add_runtime_dependency "jekyll-gist", "~> 1.5"
-  spec.add_runtime_dependency "jekyll-feed", "~> 0.15"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.16"
   spec.add_runtime_dependency "jekyll-redirect-from", "~> 0.16"
   # jekyll-sitemap should be last item of plugin list : https://github.com/jekyll/jekyll-sitemap
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"

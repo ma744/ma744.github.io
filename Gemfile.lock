@@ -1,16 +1,16 @@
 PATH
   remote: .
   specs:
-    enfield-jekyll-theme-website (1.1.5)
-      bundler (~> 2.2)
+    enfield-jekyll-theme-website (1.1.6)
+      bundler (~> 2)
       jekyll (~> 4.2)
       jekyll-analytics (~> 0.1)
-      jekyll-feed (~> 0.15)
+      jekyll-feed (~> 0.16)
       jekyll-gist (~> 1.5)
       jekyll-mentions (~> 1.6)
       jekyll-paginate (~> 1.1)
       jekyll-redirect-from (~> 0.16)
-      jekyll-seo-tag (~> 2.7)
+      jekyll-seo-tag (~> 2)
       jekyll-sitemap (~> 1.4)
       webrick (~> 1.7)
 
