@@ -17,8 +17,6 @@ title: Impressum
 
 E-Mail: <span class="bot">ed[tod]ztra-lecram[ta]liame</span>
 
-Ich weise Sie daraufhin, dass die Kommunikation per E-Mail Sicherheitslücken aufweißt.
-
 
 
 **Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**
