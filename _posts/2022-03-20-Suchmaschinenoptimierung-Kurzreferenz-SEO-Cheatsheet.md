@@ -4,9 +4,10 @@ title: Suchmaschinenoptimierung - Kurzreferenz (SEO Cheatsheet)
 ---
 
 
+
 ## Inhalt
 1. [Einleitung](#einleitung)
-2. [Ein paar Grundsätze vorab](#ein-paar-grundstze)
+2. [Ein paar Grundsätze vorab](#ein-paar-grundstze-vorab)
 3. [Planung und Organisation](#planung-und-organisation)
    1. [Wahl der Domainadresse](#wahl-der-domainadresse)
    2. [Duplicate Content](#duplicate-content)
@@ -16,7 +17,7 @@ title: Suchmaschinenoptimierung - Kurzreferenz (SEO Cheatsheet)
 4. [Webseiteninhalt suchmaschinenfreundlich aufbereiten](#webseiteninhalt-suchmaschinenfreundlich-aufbereiten)
    1. [Keyword-Dichte und Textgewichtung](#keyword-dichte-und-textgewichtung)
    2. [Eine gute Überschrift](#eine-gute-berschrift)
-   3. [HTML5-Metatags](#html5-metatags)
+   3. [HTML5-Meta-tags](#html5-meta-tags)
    4. [Skripte, Stylesheets und valides HTML](#skripte-stylesheets-und-valides-html)
 5. [Webseiten-Marketing](#webseiten-marketing)
    1. [robots.txt](#robotstxt)
@@ -87,11 +88,11 @@ Jede erdenkliche Art von Duplicate Content sollte vermieden werden!
 ## HTTPS verwenden ##
 
 Jede Website sollte [HTTPS](https://developer.mozilla.org/de/docs/Glossary/https) unterstützen.
-Ein Zertifikat kann bei Certifacate-Authentification-Authorities wie Let's Encrypt beantragt werden.
-Nach der Zertifizierung muss nur noch jeder User, der die Webseite über eine unverschlüsselte Verbindung via HTTP aufruft umgeleitet werden.
+Ein Zertifikat kann bei Certificate-Authentication-Authorities wie Let's Encrypt beantragt werden.
+Nach der Zertifizierung muss nur noch jeder User, der die Webseite über eine unverschlüsselte Verbindung via HTTP aufruft, umgeleitet werden.
 Dies ist z.B. mittels der ».htaccess-Datei« möglich, welche im Root-Verzeichnis der Website abgelegt wird.
 Wenn später weitere Rewrite-Rules genutzt werden, d.h. zusätzlich zur Umleitung,
-ist es sinnvoll die Weiterleitungs-Regel vor den anderen Rewrite-Regeln anzuwenden (d.h. vor die anderen Regeln zu schreiben).
+ist es sinnvoll die Regel zur Weiterleitung vor den anderen Rewrite-Regeln anzuwenden (d.h. vor die anderen Regeln zu schreiben).
 
 *Eintrag in der [.htaccess-Datei](https://httpd.apache.org/docs/2.4/howto/htaccess.html): Falls die Webseite nicht über Port 443 (ist HTTPS zugewiesen) aufgerufen wird, soll dem User eine "Site Moved" Nachricht geschickt werden:*
 ```text
@@ -154,7 +155,7 @@ Eine solche Bottom-Navbar lässt sich leicht mit [Bootstrap](https://getbootstra
 Verschiedene Quellen geben unterschiedliche Angaben bezüglich der Keyword-Dichte an,
 weshalb an dieser Stellen kein Prozentwert angegeben werden kann.
 Im ersten Absatz eines Textes sollten die wichtigsten Schlüsselwörter auftauchen.
-Es ist empfehlenswert Schlüsselwörter in die Überschrift einzubunden
+Es ist empfehlenswert Schlüsselwörter in die Überschrift einzubinden
 oder in Fettschrift zu markieren oder
 um einen Link zu weiterführenden Informationen zu ergänzen.
 
@@ -166,24 +167,23 @@ weil die dort vorhandenen Keywords die Seite meist gut abbilden.
 
 In dem HTML-\<title\>-Tag sollten wichtige Schlüsselbegriffe genannt werden.
 Darunter fallen der Name des Unternehmens / Betreibers, eine kurze Beschreibung,
-eine Ansammlung an Keywords. Ein Bsp.: »Marcel Artz - Dokumentationen über meine IT-Projekte rund um Red Teaming, Scripting, Dark-Themes und Kryptografie!
+eine Ansammlung an Keywords. Ein Bsp.: Marcel Artz - Dokumentationen über meine IT-Projekte rund um Red Teaming, Scripting, Dark-Themes und Kryptografie!
 
 
-## HTML5-Metatags ##
+## HTML5-Meta-tags ##
 
-Die folgenden HTML5-Metatags sind empfehlenswert:
+Die folgenden HTML5-Meta-tags sind empfehlenswert:
 ```html
-<meta name="description" content="Meine tolle Seite - Hier preise ich an wie toll sie ist und was sie alles zu bieten hat."></meta>
-
-<meta name="keywords" content="seo, optimierung, google, metatags, gute Beschreibung, Aufbau, beispiel"></meta>
-<meta name="robots" content="INDEX,FOLLOW"></meta>
-<meta name="revisit" content="After 7 days"></meta>
-<meta name="language" content="de"></meta>
-<meta name="author" content="">Marcel Artz</meta>
+<meta name="description" content="Meine tolle Seite - Hier preise ich an wie toll sie ist und was sie alles zu bieten hat.">
+<meta name="keywords" content="seo, optimierung, google, meta tags, gute Beschreibung, Aufbau, beispiel">
+<meta name="robots" content="INDEX,FOLLOW">
+<meta name="revisit" content="After 7 days">
+<meta name="language" content="de">
+<meta name="author" content="Marcel Artz">
 ```
 
 
-Das Metatag "revisit" sollte nach den eigenen Bedürfnissen angepasst werden. 
+Das Metadata "revisit" sollte nach den eigenen Bedürfnissen angepasst werden. 
 Es gibt dem Crawler eine Empfehlung an wie oft er vorbeikommen soll.
 Ob sich der Crawler daran hält, steht jedoch nicht fest.
 Daher darf die Zweckmäßigkeit von "revisit" kritisch betrachtet werden.
@@ -235,7 +235,7 @@ darf nur einmal existieren und muss kleingeschrieben werden.
 
 Anweisungen in dieser Datei bestehen aus zwei Teilen:
 
-1. Die User-Agent-Definiton: Benutze dafür den Namen des User-Agents der Suchmaschine, mit welcher die Webseite gefunden werden wollten, oder ein Asterisk (*) um alle User-Agents anzusprechen.
+1. Die User-Agent-Definition: Benutze dafür den Namen des User-Agents der Suchmaschine, mit welcher die Webseite gefunden werden wollten, oder ein Asterisk (*) um alle User-Agents anzusprechen.
 2. Die Anweisungen: mit »Allow« kann die Indexierung (einzelner Verzeichnisse) erlaubt, mit »Disallow« verboten werden. Folgt nach der Anweisung Disallow keine Angabe, so ist alles erlaubt.
 
 Hier ein Beispiel:
@@ -288,7 +288,7 @@ Deinen Link aufwerten:
 - Was bieten deine Seiten im Vergleich zur Konkurrenz?
 - Wie würdest du deine Seite / Ihr Angebot beschreiben?
 
-Verwende am besten auf unterschiedlichen Seiten unterschiedliche Beschreibungen etc.. 
+Verwende am besten auf unterschiedlichen Seiten unterschiedliche Beschreibungen etc. 
 So vermeidest du die Gefahr als Spam wahrgenommen zu werden und 
 personalisierst gleichzeitig deinen Link.
 
@@ -351,6 +351,9 @@ Diese Motivation sollte im Idealfall intrinsischer Natur sein und durch Merkmale
 
 
 ---
+
+
+
 
 
 
