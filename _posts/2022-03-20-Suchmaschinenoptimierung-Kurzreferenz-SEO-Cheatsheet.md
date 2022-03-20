@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Suchmaschinenoptimierung - Kurzreferenz (SEO Cheatsheet)
+tags: [seo, search engine optimization, suchmaschinenoptimierung, cheatsheet, google, robotstxt, duplicate content]
 ---
 
 
