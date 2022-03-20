@@ -6,7 +6,7 @@ title: Marcels Site
 # Short description of your site
 tagline: Dokumentation über meine Projekte
 # Long description of your site
-description: "Dokumentationen über meine Projekte rund um Scripting, Linux, Python, sowie IT-Sicherheit, Dark Themes und Kryptographie"
+description: "Dokumentationen über meine Projekte rund um Scripting, Linux, IT-Sicherheit und Kryptographie"
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -73,7 +73,7 @@ footer-link-col: "#ffb500" # not so dark yellow
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Marcel Artz
-  email: email@marcel-artz.de
+  #email:
   url: https://marcel-artz.de
   github: ma744
 
@@ -92,29 +92,7 @@ social-network-links:
   rss: true
   email: "Meine E-Mail Adresse findest Du unter https://marcel-artz.de/contact"
   github: ma744
-#  facebook: deanattali
-#  twitter: daattali
-#  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  telephone: +14159998888
-#  twitch: yourname
-
-
-# Specify your social profiles for search engine optimization (part of the 'jekyll-seo-tag' gem)
-# See https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md for more information
-# social:
-#   name: Ben Balter
-#   links:
-#     - https://twitter.com/BenBalter
-#     - https://www.facebook.com/ben.balter
-#     - https://www.linkedin.com/in/BenBalter
-#     - https://github.com/benbalter
-#     - https://keybase.io/benbalter
-
+#  linkedin: marcel-artz-it-security/
 
 # webmaster_verifications:
 #   google: 1234
