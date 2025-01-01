@@ -1,72 +1,60 @@
----
-layout: page
-title: Marcels Site
-subtitle: Dokumentation über meine Projekte
-use-site-title: true
----
+<!DOCTYPE html>
+<html lang="en_us">
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | relative_url }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
-    </a>
+    <title>Marcel Artz | Ruhr University Bochum | IT Security M.Sc. Student</title>
 
-    <p class="post-meta">
-      Posted on {{ post.date | date: site.date_format }}
-    </p>
+    <meta property="og:title" content="Marcel Artz (Ruhr-Universität-Bochum)" />
+    <meta name="author" content="Marcel Artz" />
+    <meta property="og:locale" content="en_us" />
+    <meta name="description" content="Marcel Artz (Student at Ruhr-University Bochum)" />
+    <meta property="og:site_name" content="Marcel Artz" />
 
-    <div class="post-entry-container">
-      {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.image | relative_url }}">
-        </a>
-      </div>
-      {% endif %}
-      <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
-      </div>
-    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-      Tags:
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
-    </div>
-    {% endif %}
+  </head>
 
-   </article>
-  {% endfor %}
-</div>
+  <body>
+    <!-- Section page helps to center the webpage -->
+    <section class="page">
 
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | relative_url }}">&larr; Neuere Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | relative_url }}">Ältere Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+      <main>
+        <div id="name">
+          <span>Marcel Artz</span>
+        </div>
+
+        <div class="headline-separator"></div>
+
+        <div id="summary">
+          IT Security M.Sc. Student<br>
+          at<br>
+          <a href="https://www.ruhr-uni-bochum.de/de">Ruhr University Bochum</a><br>
+          working as working student at<br>
+          <a href="https://www.etas.com/en/products/cybersecurity-solutions.php">ETAS GmbH</a><br>
+        </div>
+      </main>
+
+      <div class="content-separator"></div>
+      <div><span>- - - - -</span></div>
+      <div class="content-separator"></div>
+
+      <aside>
+          <div class="box" id="linkedin">
+            <span><a href="www.linkedin.com/in/m-artz">LinkedIn Profile</a></span>
+          </div>
+
+          <div class="box" id="github">
+            <span><a href="https://github.com/ma744">Github Repository</a></span>
+          </div>
+      </aside>
+
+    </section>
+
+  </body>
+
+</html>
