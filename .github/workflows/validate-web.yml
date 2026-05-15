@@ -1,0 +1,36 @@
+name: Validate HTML and CSS
+
+on:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 26
+
+      - name: Validate HTML with Nu Html Checker
+        run: npx --yes vnu-jar --skip-non-html --errors-only .
+
+      - name: Validate CSS with Stylelint
+        run: |
+          npm init -y
+          npm install --no-save stylelint@16 stylelint-config-standard@36
+
+          cat > .stylelintrc.ci.json <<'EOF'
+          {
+            "extends": ["stylelint-config-standard"]
+          }
+          EOF
+
+          npx stylelint "css/**/*.css" --config .stylelintrc.ci.json
+
+
+
